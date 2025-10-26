@@ -9,8 +9,6 @@
 extern LCD_PCF8574_HandleTypeDef LCD; // JSB
 #endif
 
-SPI_HandleTypeDef nRF24L01_SPI_Handle;
-
 // Timeout counter (depends on the CPU speed)
 // Used for not stuck waiting for IRQ
 #define nRF24_WAIT_TIMEOUT         (uint32_t)0x000FFFFF
