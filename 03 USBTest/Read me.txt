@@ -1,0 +1,4 @@
+Responds to '0' and '1' by switching LED off / on respectively, and returning a corresponding message.
+Test using PuTTY to send / receive from VCP. Baud rate is not used.
+See Device Manager to identify which COM port number.
+Debug using "USB tree".

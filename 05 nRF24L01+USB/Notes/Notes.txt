@@ -1,0 +1,29 @@
+===
+Miscellaneous:
+
+nRF24L01:
+=> Solder a 100nF capacitor and a 10uF capacitor across pins 1 and 2 (the power supply pins).
+=> May require careful attention to power supply quality and screening.
+   => Without screening, some PA+LNA versions work with a hand nearby but not without it, due to the output signal interfering with the board operation.
+===
+Connections:
+
+Serial output:
+=> MCU PA2.
+
+nRF24L01:
+=> nRF24L01 GND [Pin 1] ----- MCU G
+=> nRF24L01 V+ [Pin 2] ----- MCU 3.3
+=> nRF24L01 CE [Pin 3] ----- MCU PB11
+=> nRF24L01 CSN [Pin 4] ----- MCU PB12
+=> nRF24L01 SCK [Pin 5] ----- MCU PB13
+=> nRF24L01 MOSI [Pin 6] ----- MCU PB15
+=> nRF24L01 MISO [Pin 7] ----- MCU PB14
+=> nRF24L01 IRQ [Pin 8] ----- MCU PB10
+
+HD44780 with I2C adapter:
+=> LCD SCL ----- MCU I2C1_SCL PB6 With 2K2 pullup!
+=> LCD SDA ----- MCU I2C1_SDA PB7 With 2K2 pullup!
+=> LCD VCC ----- MCU 5V
+=> LCD GND ----- MCU G
+===

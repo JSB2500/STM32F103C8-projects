@@ -1,0 +1,5 @@
+MCU Serial output PA2 => PC etc e.g. Serial <=> USB module.
+MCU I2C1_SCL PB6 <=> LCD SCL - With 2K2 pullup!
+MCU I2C1_SDA PB7 <=> LCD SDA - With 2K2 pullup!
+MCU 5V => LCD VCC
+MCU G => LCD GND
