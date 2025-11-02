@@ -31,29 +31,39 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>Inc/JSB_General.h</name>
+			<name>Core/Inc/JSB_ILI9341.h</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Shared/JSB_General.h</locationURI>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_ILI9341.h</locationURI>
+		</link>
+		<link>
+			<name>Core/Inc/JSB_MCP444X.h</name>
+			<type>1</type>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_MCP444X.h</locationURI>
+		</link>
+		<link>
+			<name>Core/Inc/JSB_XPT2046.h</name>
+			<type>1</type>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_XPT2046.h</locationURI>
 		</link>
 		<link>
 			<name>Core/Src/JSB_General.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-WORKSPACE_LOC/Shared/JSB_General.c</locationURI>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_General.c</locationURI>
 		</link>
 		<link>
 			<name>Core/Src/JSB_ILI9341.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-WORKSPACE_LOC/Shared/JSB_ILI9341.c</locationURI>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_ILI9341.c</locationURI>
 		</link>
 		<link>
 			<name>Core/Src/JSB_MCP444X.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-WORKSPACE_LOC/Shared/JSB_MCP444X.c</locationURI>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_MCP444X.c</locationURI>
 		</link>
 		<link>
 			<name>Core/Src/JSB_XPT2046.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-WORKSPACE_LOC/Shared/JSB_XPT2046.c</locationURI>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_XPT2046.c</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

@@ -18,18 +18,6 @@
 			</arguments>
 		</buildCommand>
 	</buildSpec>
-	<linkedResources>
-		<link>
-			<name>Core/Inc/nrf24.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Shared/nrf24.h</locationURI>
-		</link>
-		<link>
-			<name>Core/Src/nrf24.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Shared/nrf24.c</locationURI>
-		</link>
-	</linkedResources>
 	<natures>
 		<nature>com.st.stm32cube.ide.mcu.MCUProjectNature</nature>
 		<nature>com.st.stm32cube.ide.mcu.MCUCubeProjectNature</nature>
@@ -41,4 +29,16 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Core/Inc/nrf24.h</name>
+			<type>1</type>
+			<locationURI>WORKSPACE_LOC/Shared/nrf24.h</locationURI>
+		</link>
+		<link>
+			<name>Core/Src/nrf24.c</name>
+			<type>1</type>
+			<locationURI>WORKSPACE_LOC/Shared/nrf24.c</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
