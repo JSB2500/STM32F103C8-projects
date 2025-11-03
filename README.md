@@ -6,4 +6,4 @@ Things used:
   • Board info:  
     • https://handsontec.com/dataspecs/module/STM32F103%20module.pdf  
 • Development tool: STM32CubeIDE V1.19.0  
-• Library: STM32Cube_FW_F1_V1.8.6  
+• Library: STM32Cube_FW_F1_V1.8.6 [Embedded]  
