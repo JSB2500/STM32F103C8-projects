@@ -7,4 +7,3 @@ Things used:
     • https://handsontec.com/dataspecs/module/STM32F103%20module.pdf  
 • Development tool: STM32CubeIDE V1.19.0  
 • Library: STM32Cube_FW_F1_V1.8.6  
-• Shared files: https://github.com/JSB2500/STM32-Shared-files  
