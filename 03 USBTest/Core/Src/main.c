@@ -24,6 +24,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+#include "JSB_stm32f1xx.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,16 +59,6 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
-void SetLEDState(uint8_t On)
-{
-  HAL_GPIO_WritePin(UserLED_GPIO_Port, UserLED_Pin, On ? GPIO_PIN_RESET : GPIO_PIN_SET);
-}
-
-void ToggleLEDState()
-{
-  HAL_GPIO_TogglePin(UserLED_GPIO_Port, UserLED_Pin);
-}
 
 /* USER CODE END 0 */
 
@@ -173,22 +165,7 @@ void SystemClock_Config(void)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  while(1) 
-  {
-    SetLEDState(1);
-    HAL_Delay(100);
-    SetLEDState(0);
-    HAL_Delay(100);
-    SetLEDState(1);
-    HAL_Delay(100);
-    SetLEDState(0);
-    HAL_Delay(100);
-    SetLEDState(1);
-    HAL_Delay(100);
-    SetLEDState(0);
-    HAL_Delay(1000);
-  }
+  JSB_ErrorHandler();
   /* USER CODE END Error_Handler_Debug */
 }
 #ifdef USE_FULL_ASSERT

@@ -29,4 +29,16 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Core/Inc/JSB_stm32f1xx.h</name>
+			<type>1</type>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_stm32f1xx.h</locationURI>
+		</link>
+		<link>
+			<name>Core/Src/JSB_stm32f1xx.c</name>
+			<type>1</type>
+			<locationURI>WORKSPACE_LOC/Shared/JSB_stm32f1xx.c</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

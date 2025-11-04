@@ -41,6 +41,8 @@
 
 /* USER CODE BEGIN Includes */
 
+#include "JSB_stm32f1xx.h"
+
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -60,11 +62,6 @@ static void MX_GPIO_Init(void);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
-
-void SetLEDState(uint8_t On)
-{
-  HAL_GPIO_WritePin(UserLED_GPIO_Port, UserLED_Pin, On ? GPIO_PIN_RESET : GPIO_PIN_SET);
-}
 
 /* USER CODE END 0 */
 
@@ -96,11 +93,6 @@ int main(void)
 
   /* USER CODE BEGIN 2 */
 
-  void SetLEDState(uint8_t On)
-  {
-    HAL_GPIO_WritePin(UserLED_GPIO_Port, UserLED_Pin, On ? GPIO_PIN_RESET : GPIO_PIN_SET);
-  }
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -111,9 +103,9 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-    SetLEDState(1);
+	JSB_SetLEDState(1);
     HAL_Delay(200);
-    SetLEDState(0);
+    JSB_SetLEDState(0);
     HAL_Delay(300);
   }
   /* USER CODE END 3 */
@@ -207,21 +199,7 @@ static void MX_GPIO_Init(void)
 void _Error_Handler(char * file, int line)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  while (1)
-  {
-    SetLEDState(1);
-    HAL_Delay(100);
-    SetLEDState(0);
-    HAL_Delay(100);
-    SetLEDState(1);
-    HAL_Delay(100);
-    SetLEDState(0);
-    HAL_Delay(100);
-    SetLEDState(1);
-    HAL_Delay(100);
-    SetLEDState(0);
-    HAL_Delay(1000);
-  }
+  JSB_ErrorHandler();
   /* USER CODE END Error_Handler_Debug */
 }
 
